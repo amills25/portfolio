@@ -39,14 +39,14 @@ function Projects({ projects }: Props) {
             <div className="max-w-6xl px-0 space-y-6 md:px-10">
               <h4 className="text-3xl font-semibold text-center">
                 <span className="underline decoration-[#61DBFB]/50">
-                  {project.title}
+                  Project {i + 1} of {projects.length}: {project.title}
                 </span>
               </h4>
 
               <div className="flex items-center space-x-2 justify-center">
                 {project.technologies.map((tech) => (
                   <img
-                    className="h-10 w-10"
+                    className="h-10 w-10 object-cover"
                     key={tech._id}
                     src={urlFor(tech.image).url()}
                     alt=""
