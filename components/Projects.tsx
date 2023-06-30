@@ -3,7 +3,6 @@
 import { urlFor } from "@/sanity";
 import { Project } from "@/typings";
 import { motion } from "framer-motion";
-import { textChangeRangeIsUnchanged } from "typescript";
 
 type Props = {
   projects: Project[];
