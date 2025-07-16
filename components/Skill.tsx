@@ -1,5 +1,5 @@
 import { urlFor } from "@/sanity";
-import { Skill } from "@/typings";
+import type { Skill } from "@/typings";
 import { motion } from "framer-motion";
 
 type Props = {
